@@ -118,6 +118,7 @@
                 <input bomType="java.lang.String" collection="false" name="Clause Matching Rule"/>
                 <input bomType="java.lang.String" collection="false" name="Company Name Matching Rule"/>
                 <input bomType="java.lang.String" collection="false" name="Email Recipient Matching Rule"/>
+                <input bomType="java.lang.String" collection="false" name="Company Address Matching Rule"/>
                 <input bomType="java.lang.String" collection="false" name="Mailing Address Matching Rule"/>
                 <output bomType="java.lang.String" collection="true" name="Matching Result"/>
                 <rule defaultRule="true" href="node_7/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
@@ -144,6 +145,9 @@
         </informationRequirement>
         <informationRequirement>
             <requiredInput href="#node_8"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_10"/>
         </informationRequirement>
         <informationRequirement>
             <requiredInput href="#node_9"/>
@@ -176,6 +180,23 @@
             </ruleset>
         </extensionElements>
         <variable id="node_9_ii" name="Mailing Address Matching Rule" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_10" name="Company Address Matching Rule">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Company Address Matching Rule"/>
+                <rule defaultRule="false" href="node_10/Company%20%20Address%20Matching%20Rule.drl" kind="BusinessRule" name="Company  Address Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_10_ii" name="Company Address Matching Rule" typeRef="java.lang.String"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>

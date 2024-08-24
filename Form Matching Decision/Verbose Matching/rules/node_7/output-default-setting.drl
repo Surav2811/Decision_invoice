@@ -10,5 +10,7 @@ add "Name : " + 'Name Matching' to decision ;
 add "Title : " + 'Title Matching' to decision ;
 add "Authorized Recipients : " + 'Email Recipient Matching Rule' to decision ;
 add "Mailing Address : " + 'Mailing Address Matching Rule' to decision;
+add "Company Address : " + 'Mailing Address Matching Rule' to decision;
+
 ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
