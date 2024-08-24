@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>fcd3237f-7f13-46fc-88e0-3d0cccccd71b</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="ExtractedList">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted" collection="true" name="ExtractedList"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="ExtractedList" typeRef="rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted[]"/>
+    </inputData>
+    <inputData id="node_2" name="DatabaseList">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted" collection="true" name="DatabaseList"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="DatabaseList" typeRef="rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted[]"/>
+    </inputData>
+    <decision id="node_4" name="Decision 4">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="collect">
+                <input bomType="rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted" collection="true" name="ExtractedList"/>
+                <input bomType="rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted" collection="true" name="DatabaseList"/>
+                <output bomType="java.lang.String" collection="true" name="Decision 4"/>
+                <rule defaultRule="false" href="node_4/Test.drl" kind="BusinessRule" name="Test"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Decision 4" typeRef="java.lang.String[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

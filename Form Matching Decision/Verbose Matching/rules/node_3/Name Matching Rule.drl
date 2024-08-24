@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Name Matching Rule</name>
+  <uuid>db47487b-ecec-4232-a2a7-260680d3f3a0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the Name of 'Form Sent' is the Name of 'Form Received'
+then
+	set decision to "Full Match" ;
+else set decision to "Mis Match" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>output-default-setting</name>
+  <uuid>fd127993-3bb0-4192-8529-e6eba6856770</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[add "Clause : " + 'Clause Matching Rule' to decision ;
+add "Company Name : " + the Company Name of 'Form Received' + " | " + 'Company Name Matching Rule'  to decision ; 
+add "Date : " + 'Date Matching' to decision ; 
+add "Name : " + 'Name Matching' to decision ; 
+add "Title : " + 'Title Matching' to decision ;
+add "Authorized Recipients : " + 'Email Recipient Matching Rule' to decision ;
+add "Mailing Address : " + 'Mailing Address Matching Rule' to decision;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

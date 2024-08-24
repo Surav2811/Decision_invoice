@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Clause Matching Business Rule</name>
+  <uuid>39170106-f52e-4793-bd6d-5634b7a2ce8d</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the Agreement Clause of 'Form Sent' is the Agreement Clause of 'Form Received' 
+then set decision to "Full Match" ;
+else set decision to "Mis Match" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

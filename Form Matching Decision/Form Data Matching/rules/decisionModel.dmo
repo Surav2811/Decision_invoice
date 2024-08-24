@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>ea6786a4-2b6c-45e3-95db-d983bb81c34a</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Form Data Sent">
+        <description>Form Data sent to the User</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Data Sent"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Form Data Sent" typeRef="formmatchingdecision.formdata.FormData"/>
+    </inputData>
+    <decision id="node_1" name="Matching Decision Plain">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Data Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Data Received"/>
+                <output bomType="java.lang.String" collection="false" name="Matching Decision Plain"/>
+                <rule defaultRule="false" href="node_1/Form%20Matching%20Rule.drl" kind="BusinessRule" name="Form Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Matching Decision Plain" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Form Data Received">
+        <description>Form Data received from the user</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Data Received"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Form Data Received" typeRef="formmatchingdecision.formdata.FormData"/>
+    </inputData>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

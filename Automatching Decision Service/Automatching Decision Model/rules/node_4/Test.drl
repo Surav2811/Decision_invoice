@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Test</name>
+  <uuid>4b5adbe2-effa-4d7f-85b7-ea2a7df8e0e3</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each Extracted , in ExtractedList
+
+	if
+		all of the following conditions are true : 
+		- the Notional Amounts of DatabaseList contain the Notional Amount of this Extracted //item 
+    	- the Party As of DatabaseList contain the Party A of this Extracted //item 
+    	- the Party Bs of DatabaseList contain the Party B of this Extracted //item 
+    	- the Reference Numbers of DatabaseList contain the Reference Number of this Extracted //item 
+    	- the Reference Currencies of DatabaseList contain the Reference Currency of this Extracted //item
+    	- the Valuation Dates of DatabaseList contain the Valuation Date of this Extracted //item 
+    	- the Trade Dates of DatabaseList contain the Trade Date of this Extracted //item ,
+	then 
+		add "Matched" to decision;
+	else
+		add "Mismatch" to decision;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

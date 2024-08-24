@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Company Matching Rule</name>
+  <uuid>ba31f26b-5c1c-44ac-a61a-16b1e970f5b5</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the Company Name of 'Form Sent' is the Company Name of 'Form Received'
+then
+	set decision to "Full Match" ;
+else set decision to "Mis Match" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

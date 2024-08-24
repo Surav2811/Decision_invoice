@@ -1,0 +1,40 @@
+
+# Term: Agreement Clause
+@Agreement\ Clause#article.definite.plural = all
+
+# formmatchingdecision.formdata.FormData
+formmatchingdecision.formdata.FormData#concept.label = form data
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.action[0] = {this} gets FX Spot Rates only if {FX Spot Rates}
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.action[1] = make it {FX Spot Rates} that {this} is FX Spot Rates
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.action[1].deprecated = true
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.navigation = {this} is FX Spot Rates
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.negative_predicate = {this} is not FX Spot Rates
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.negative_predicate_setter = {this} does not get FX Spot Rates
+formmatchingdecision.formdata.FormData.FXSpotRates#phrase.positive_predicate_setter = {this} gets FX Spot Rates
+formmatchingdecision.formdata.FormData.FormData(boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {form data} where {0, FX Spot Rates} {1, MTM Currency} {2, Additional Requests} {3, Agreement Clause} {4, Authorised Recipient} {5, Company Address} {6, Company Name} {7, Date} {8, Holiday Option} {9, Mailing Address} {10, Name} {11, Spot Rates} {12, Titile} {13, Valuation Frequency}
+formmatchingdecision.formdata.FormData.MTMCurrency#phrase.action = set the MTM Currency of {this} to {MTM Currency}
+formmatchingdecision.formdata.FormData.MTMCurrency#phrase.navigation = {MTM Currency} of {this}
+formmatchingdecision.formdata.FormData.additionalRequests#phrase.action = set the Additional Requests of {this} to {Additional Requests}
+formmatchingdecision.formdata.FormData.additionalRequests#phrase.navigation = {Additional Requests} of {this}
+formmatchingdecision.formdata.FormData.agreementClause#phrase.action = set the Agreement Clause of {this} to {Agreement Clause}
+formmatchingdecision.formdata.FormData.agreementClause#phrase.navigation = {Agreement Clause} of {this}
+formmatchingdecision.formdata.FormData.authorisedRecipientses#phrase.action = set the Authorised Recipient of {this} to {Authorised Recipient}
+formmatchingdecision.formdata.FormData.authorisedRecipientses#phrase.navigation = {Authorised Recipient} of {this}
+formmatchingdecision.formdata.FormData.companyAddress#phrase.action = set the Company Address of {this} to {Company Address}
+formmatchingdecision.formdata.FormData.companyAddress#phrase.navigation = {Company Address} of {this}
+formmatchingdecision.formdata.FormData.companyName#phrase.action = set the Company Name of {this} to {Company Name}
+formmatchingdecision.formdata.FormData.companyName#phrase.navigation = {Company Name} of {this}
+formmatchingdecision.formdata.FormData.date#phrase.action = set the Date of {this} to {Date}
+formmatchingdecision.formdata.FormData.date#phrase.navigation = {Date} of {this}
+formmatchingdecision.formdata.FormData.holidayOption#phrase.action = set the Holiday Option of {this} to {Holiday Option}
+formmatchingdecision.formdata.FormData.holidayOption#phrase.navigation = {Holiday Option} of {this}
+formmatchingdecision.formdata.FormData.mailingAddress#phrase.action = set the Mailing Address of {this} to {Mailing Address}
+formmatchingdecision.formdata.FormData.mailingAddress#phrase.navigation = {Mailing Address} of {this}
+formmatchingdecision.formdata.FormData.name#phrase.action = set the Name of {this} to {Name}
+formmatchingdecision.formdata.FormData.name#phrase.navigation = {Name} of {this}
+formmatchingdecision.formdata.FormData.spotRates#phrase.action = set the Spot Rates of {this} to {Spot Rates}
+formmatchingdecision.formdata.FormData.spotRates#phrase.navigation = {Spot Rates} of {this}
+formmatchingdecision.formdata.FormData.titile#phrase.action = set the Titile of {this} to {Titile}
+formmatchingdecision.formdata.FormData.titile#phrase.navigation = {Titile} of {this}
+formmatchingdecision.formdata.FormData.valuationFrequency#phrase.action = set the Valuation Frequency of {this} to {Valuation Frequency}
+formmatchingdecision.formdata.FormData.valuationFrequency#phrase.navigation = {Valuation Frequency} of {this}

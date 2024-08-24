@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Form Data Matching">
+  <name>Form_Data_Matching</name>
+  <uuid>f060b753-43f0-4061-8f15-dd906b5a1f58</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#ea6786a4-2b6c-45e3-95db-d983bb81c34a"/>
+  <targetRuleProject href="../../Form%20Data%20Matching#9f18c00b-8c32-41d4-b7a8-2ffe1763a06d"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Form Data Matching"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Date Matching Rule</name>
+  <uuid>a0c26683-484f-4cd4-bdc5-68024f98d11b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the Date of 'Form Sent' is the Date of 'Form Received'
+then
+	set decision to "Full Match" ;
+else set decision to "Mis Match" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

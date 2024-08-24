@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Verbose Matching">
+  <name>Verbose_Matching</name>
+  <uuid>f04a7139-d475-4226-ab75-21c873cde02b</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#f48e3123-0cd1-4213-98d9-bc41740147b5"/>
+  <targetRuleProject href="../../Verbose%20Matching#510b6a28-0a6b-48bd-92fd-6e42a3945626"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

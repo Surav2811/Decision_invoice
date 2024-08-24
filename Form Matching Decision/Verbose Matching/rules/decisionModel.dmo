@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>f48e3123-0cd1-4213-98d9-bc41740147b5</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Form Sent">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Form Sent" typeRef="formmatchingdecision.formdata.FormData"/>
+    </inputData>
+    <decision id="node_1" name="Title Matching">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Title Matching"/>
+                <rule defaultRule="false" href="node_1/Titile%20Matching%20Rule.drl" kind="BusinessRule" name="Titile Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Title Matching" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Form Received">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Form Received" typeRef="formmatchingdecision.formdata.FormData"/>
+    </inputData>
+    <decision id="node_3" name="Name Matching">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Name Matching"/>
+                <rule defaultRule="false" href="node_3/Name%20Matching%20Rule.drl" kind="BusinessRule" name="Name Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="Name Matching" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_4" name="Date Matching">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Date Matching"/>
+                <rule defaultRule="false" href="node_4/Date%20Matching%20Rule.drl" kind="BusinessRule" name="Date Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Date Matching" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_5" name="Clause Matching Rule">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Clause Matching Rule"/>
+                <rule defaultRule="false" href="node_5/Clause%20Matching%20Business%20Rule.drl" kind="BusinessRule" name="Clause Matching Business Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="Clause Matching Rule" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_6" name="Company Name Matching Rule">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Company Name Matching Rule"/>
+                <rule defaultRule="false" href="node_6/Company%20Matching%20Rule.drl" kind="BusinessRule" name="Company Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_6_ii" name="Company Name Matching Rule" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_7" name="Matching Result">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="Title Matching"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <input bomType="java.lang.String" collection="false" name="Name Matching"/>
+                <input bomType="java.lang.String" collection="false" name="Date Matching"/>
+                <input bomType="java.lang.String" collection="false" name="Clause Matching Rule"/>
+                <input bomType="java.lang.String" collection="false" name="Company Name Matching Rule"/>
+                <input bomType="java.lang.String" collection="false" name="Email Recipient Matching Rule"/>
+                <input bomType="java.lang.String" collection="false" name="Mailing Address Matching Rule"/>
+                <output bomType="java.lang.String" collection="true" name="Matching Result"/>
+                <rule defaultRule="true" href="node_7/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_7_ii" name="Matching Result" typeRef="java.lang.String[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_8"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_9"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_8" name="Email Recipient Matching Rule">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Email Recipient Matching Rule"/>
+                <rule defaultRule="false" href="node_8/Recipient%20Matching%20Rule.drl" kind="BusinessRule" name="Recipient Matching Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_8_ii" name="Email Recipient Matching Rule" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_9" name="Mailing Address Matching Rule">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Sent"/>
+                <input bomType="formmatchingdecision.formdata.FormData" collection="false" name="Form Received"/>
+                <output bomType="java.lang.String" collection="false" name="Mailing Address Matching Rule"/>
+                <rule defaultRule="false" href="node_9/Mailing%20Address%20Matching%20Business%20Rule.drl" kind="BusinessRule" name="Mailing Address Matching Business Rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_9_ii" name="Mailing Address Matching Rule" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
