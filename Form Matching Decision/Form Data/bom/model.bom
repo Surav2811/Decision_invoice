@@ -7,18 +7,6 @@ class FormData
         property com.fasterxml.jackson.annotation.JsonTypeName "formData"
         #de.generated
 {
-    boolean FXSpotRates
-                property ads.attributeId "9"
-                property com.fasterxml.jackson.annotation.JsonProperty "FXSpotRates"
-                #update;
-    string MTMCurrency
-                property ads.attributeId "6"
-                property com.fasterxml.jackson.annotation.JsonProperty "MTMCurrency"
-                #update;
-    string additionalRequests
-                property ads.attributeId "11"
-                property com.fasterxml.jackson.annotation.JsonProperty "AdditionalRequests"
-                #update;
     string agreementClause
                 property ads.attributeId "12"
                 property com.fasterxml.jackson.annotation.JsonProperty "AgreementClause"
@@ -39,10 +27,6 @@ class FormData
                 property ads.attributeId "1"
                 property com.fasterxml.jackson.annotation.JsonProperty "Date"
                 #update;
-    string holidayOption
-                property ads.attributeId "8"
-                property com.fasterxml.jackson.annotation.JsonProperty "HolidayOption"
-                #update;
     string mailingAddress
                 property ads.attributeId "5"
                 property com.fasterxml.jackson.annotation.JsonProperty "MailingAddress"
@@ -51,32 +35,11 @@ class FormData
                 property ads.attributeId "15"
                 property com.fasterxml.jackson.annotation.JsonProperty "Name"
                 #update;
-    string spotRates
-                property ads.attributeId "10"
-                property com.fasterxml.jackson.annotation.JsonProperty "SpotRates"
-                #update;
     string titile
                 property ads.attributeId "14"
                 property com.fasterxml.jackson.annotation.JsonProperty "Titile"
                 #update;
-    string valuationFrequency
-                property ads.attributeId "7"
-                property com.fasterxml.jackson.annotation.JsonProperty "ValuationFrequency"
-                #update;
-    FormData(boolean FXSpotRates, 
-        string MTMCurrency, 
-        string additionalRequests, 
-        string agreementClause, 
-        string authorisedRecipientses, 
-        string companyAddress, 
-        string companyName, 
-        java.time.LocalDate date, 
-        string holidayOption, 
-        string mailingAddress, 
-        string name, 
-        string spotRates, 
-        string titile, 
-        string valuationFrequency)
+    FormData(string agreementClause, string authorisedRecipientses, string companyAddress, string companyName, java.time.LocalDate date, string mailingAddress, string name, string titile)
                 #autoExpand
                 #beanConstructor
                 property groups "BALA"
