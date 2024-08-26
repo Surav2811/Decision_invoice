@@ -4,4 +4,13 @@
   <uuid>256790ab-6c05-4caa-ac07-339176cf0c87</uuid>
   <decisionModel href="../rules/decisionModel.dmo#fcd3237f-7f13-46fc-88e0-3d0cccccd71b"/>
   <targetRuleProject href="../../Automatching%20Decision%20Model#4cd4f066-da66-40b6-9d3a-196f8a2cfcef"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Automatching_Decision_Model"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
