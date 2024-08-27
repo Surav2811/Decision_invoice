@@ -1,0 +1,34 @@
+
+package cp4admin.ocbc_automatching_decision_.hg.formdata;
+
+
+class NewType
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "newType"
+        #de.generated
+{
+    java.time.DayOfWeek newAttribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "newAttribute"
+                #update;
+    java.time.Year newAttribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "newAttribute1"
+                #update;
+    com.ibm.ia.time.TimePeriod newAttribute2
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "newAttribute2"
+                #update;
+    java.time.LocalDate newAttribute3
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "newAttribute3"
+                #update;
+    NewType(java.time.DayOfWeek newAttribute, java.time.Year newAttribute1, com.ibm.ia.time.TimePeriod newAttribute2, java.time.LocalDate newAttribute3)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    NewType()
+                #dataio.default;
+}
+

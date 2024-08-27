@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Obn">
+  <name>Obn</name>
+  <uuid>2d001290-7cc6-4230-bb1c-da66211315cc</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#a3f6ca3f-3763-48b2-8f39-f72c4744af5f"/>
+  <targetRuleProject href="../../Obn#2f184cac-8b1e-4a9d-b874-f8e6b58759aa"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Obn"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,12 @@
+
+# cp4admin.ocbc_automatching_decision_.hg.formdata.NewType
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType#concept.label = new type
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.NewType(java.time.DayOfWeek,java.time.Year,com.ibm.ia.time.TimePeriod,java.time.LocalDate)#phrase.navigation = a new {new type} where {0, new attribute} {1, new attribute 1} {2, new attribute 2} {3, new attribute 3}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute#phrase.action = set the new attribute of {this} to {new attribute}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute#phrase.navigation = {new attribute} of {this}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute1#phrase.action = set the new attribute 1 of {this} to {new attribute 1}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute1#phrase.navigation = {new attribute 1} of {this}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute2#phrase.action = set the new attribute 2 of {this} to {new attribute 2}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute2#phrase.navigation = {new attribute 2} of {this}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute3#phrase.action = set the new attribute 3 of {this} to {new attribute 3}
+cp4admin.ocbc_automatching_decision_.hg.formdata.NewType.newAttribute3#phrase.navigation = {new attribute 3} of {this}
