@@ -2,7 +2,7 @@
 # rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted#concept.documentation = 
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted#concept.label = Extracted
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.Extracted(double,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.time.LocalDate)#phrase.navigation = a new {Extracted} where {0, Notional Amount} {1, Party A} {2, Party B} {3, Reference Currency} {4, Reference Number} {5, Trade Date} {6, Valuation Date}
+rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.Extracted(double,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.time.LocalDate)#phrase.navigation = a new {Extracted} where {0, Notional Amount} {1, Party A} {2, Party B} {3, Reference Number} {4, Settlement Date} {5, Trade Date}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.notionalAmount#phrase.action = set the Notional Amount of {this} to {Notional Amount}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.notionalAmount#phrase.addition_setter = add {Notional Amount} to the Notional Amount of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.notionalAmount#phrase.navigation = {Notional Amount} of {this}
@@ -11,11 +11,9 @@ rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.partyA#phr
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.partyA#phrase.navigation = {Party A} of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.partyB#phrase.action = set the Party B of {this} to {Party B}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.partyB#phrase.navigation = {Party B} of {this}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceCurrency#phrase.action = set the Reference Currency of {this} to {Reference Currency}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceCurrency#phrase.navigation = {Reference Currency} of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceNumber#phrase.action = set the Reference Number of {this} to {Reference Number}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceNumber#phrase.navigation = {Reference Number} of {this}
+rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.settlementDate#phrase.action = set the Settlement Date of {this} to {Settlement Date}
+rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.settlementDate#phrase.navigation = {Settlement Date} of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.tradeDate#phrase.action = set the Trade Date of {this} to {Trade Date}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.tradeDate#phrase.navigation = {Trade Date} of {this}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.valuationDate#phrase.action = set the Valuation Date of {this} to {Valuation Date}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.valuationDate#phrase.navigation = {Valuation Date} of {this}

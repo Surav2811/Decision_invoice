@@ -19,23 +19,19 @@ class Extracted
                 property ads.attributeId "5"
                 property com.fasterxml.jackson.annotation.JsonProperty "PartyB"
                 #update;
-    string referenceCurrency
-                property ads.attributeId "1"
-                property com.fasterxml.jackson.annotation.JsonProperty "ReferenceCurrency"
-                #update;
     string referenceNumber
                 property ads.attributeId "7"
                 property com.fasterxml.jackson.annotation.JsonProperty "ReferenceNumber"
+                #update;
+    java.time.LocalDate settlementDate
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "SettlementDate"
                 #update;
     java.time.LocalDate tradeDate
                 property ads.attributeId "3"
                 property com.fasterxml.jackson.annotation.JsonProperty "TradeDate"
                 #update;
-    java.time.LocalDate valuationDate
-                property ads.attributeId "2"
-                property com.fasterxml.jackson.annotation.JsonProperty "ValuationDate"
-                #update;
-    Extracted(double notionalAmount, string partyA, string partyB, string referenceCurrency, string referenceNumber, java.time.LocalDate tradeDate, java.time.LocalDate valuationDate)
+    Extracted(double notionalAmount, string partyA, string partyB, string referenceNumber, java.time.LocalDate settlementDate, java.time.LocalDate tradeDate)
                 #autoExpand
                 #beanConstructor
                 property groups "BALA"

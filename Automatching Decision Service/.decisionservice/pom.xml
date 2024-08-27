@@ -22,11 +22,6 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>cp4admin.ocbc_automatching_decision_.automatching_decision_service</groupId>
-            <artifactId>matchUpdated</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
             <version>${engine-compact-runtime.version}</version>
@@ -87,6 +82,7 @@
 
 
 
+
 <build>
         <resources>
             <resource>
@@ -123,15 +119,6 @@
                                 <artifactItem>
                                     <groupId>cp4admin.ocbc_automatching_decision_.automatching_decision_service</groupId>
                                     <artifactId>dataModel</artifactId>
-                                    <version>LATEST-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <includes>**/*.class</includes>
-                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>cp4admin.ocbc_automatching_decision_.automatching_decision_service</groupId>
-                                    <artifactId>matchUpdated</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

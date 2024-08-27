@@ -67,7 +67,6 @@
         <module>.decisionservice</module>
         <module>Automatching Decision Model</module>
         <module>DataModel</module>
-        <module>Match Updated</module>
     </modules>
 
     <build>
