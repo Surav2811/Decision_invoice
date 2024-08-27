@@ -7,10 +7,6 @@ class Extracted
         property com.fasterxml.jackson.annotation.JsonTypeName "Extracted"
         #de.generated
 {
-    double countElements
-                property ads.attributeId "8"
-                property com.fasterxml.jackson.annotation.JsonProperty "countElements"
-                #update;
     double notionalAmount
                 property ads.attributeId "4"
                 property com.fasterxml.jackson.annotation.JsonProperty "NotionalAmount"
@@ -27,7 +23,7 @@ class Extracted
                 property ads.attributeId "1"
                 property com.fasterxml.jackson.annotation.JsonProperty "ReferenceCurrency"
                 #update;
-    double referenceNumber
+    string referenceNumber
                 property ads.attributeId "7"
                 property com.fasterxml.jackson.annotation.JsonProperty "ReferenceNumber"
                 #update;
@@ -39,7 +35,7 @@ class Extracted
                 property ads.attributeId "2"
                 property com.fasterxml.jackson.annotation.JsonProperty "ValuationDate"
                 #update;
-    Extracted(double countElements, double notionalAmount, string partyA, string partyB, string referenceCurrency, double referenceNumber, java.time.LocalDate tradeDate, java.time.LocalDate valuationDate)
+    Extracted(double notionalAmount, string partyA, string partyB, string referenceCurrency, string referenceNumber, java.time.LocalDate tradeDate, java.time.LocalDate valuationDate)
                 #autoExpand
                 #beanConstructor
                 property groups "BALA"

@@ -2,11 +2,7 @@
 # rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted#concept.documentation = 
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted#concept.label = Extracted
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.Extracted(double,double,java.lang.String,java.lang.String,java.lang.String,double,java.time.LocalDate,java.time.LocalDate)#phrase.navigation = a new {Extracted} where {0, countElements} {1, Notional Amount} {2, Party A} {3, Party B} {4, Reference Currency} {5, Reference Number} {6, Trade Date} {7, Valuation Date}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.countElements#phrase.action = set the countElements of {this} to {countElements}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.countElements#phrase.addition_setter = add {countElements} to the countElements of {this}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.countElements#phrase.navigation = {countElements} of {this}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.countElements#phrase.subtraction_setter = subtract {countElements} from the countElements of {this}
+rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.Extracted(double,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.time.LocalDate)#phrase.navigation = a new {Extracted} where {0, Notional Amount} {1, Party A} {2, Party B} {3, Reference Currency} {4, Reference Number} {5, Trade Date} {6, Valuation Date}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.notionalAmount#phrase.action = set the Notional Amount of {this} to {Notional Amount}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.notionalAmount#phrase.addition_setter = add {Notional Amount} to the Notional Amount of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.notionalAmount#phrase.navigation = {Notional Amount} of {this}
@@ -18,9 +14,7 @@ rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.partyB#phr
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceCurrency#phrase.action = set the Reference Currency of {this} to {Reference Currency}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceCurrency#phrase.navigation = {Reference Currency} of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceNumber#phrase.action = set the Reference Number of {this} to {Reference Number}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceNumber#phrase.addition_setter = add {Reference Number} to the Reference Number of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceNumber#phrase.navigation = {Reference Number} of {this}
-rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.referenceNumber#phrase.subtraction_setter = subtract {Reference Number} from the Reference Number of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.tradeDate#phrase.action = set the Trade Date of {this} to {Trade Date}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.tradeDate#phrase.navigation = {Trade Date} of {this}
 rlkuma657.demo_ocbc.automatching_decision_service.datamodel.Extracted.valuationDate#phrase.action = set the Valuation Date of {this} to {Valuation Date}

@@ -7,16 +7,16 @@
 
 	if
 		all of the following conditions are true : 
-		- the Notional Amounts of DatabaseList contain the Notional Amount of this Extracted //item 
-    	- the Party As of DatabaseList contain the Party A of this Extracted //item 
-    	- the Party Bs of DatabaseList contain the Party B of this Extracted //item 
-    	- the Reference Numbers of DatabaseList contain the Reference Number of this Extracted //item 
-    	- the Reference Currencies of DatabaseList contain the Reference Currency of this Extracted //item
-    	- the Valuation Dates of DatabaseList contain the Valuation Date of this Extracted //item 
-    	- the Trade Dates of DatabaseList contain the Trade Date of this Extracted //item ,
+		- the Notional Amounts of DatabaseList contain the Notional Amount of this Extracted  
+    	- the Party As of DatabaseList contain the Party A of this Extracted 
+    	- the Party Bs of DatabaseList contain the Party B of this Extracted  
+    	- the Reference Numbers of DatabaseList contain the Reference Number of this Extracted 
+    	- the Reference Currencies of DatabaseList contain the Reference Currency of this Extracted 
+    	- the Valuation Dates of DatabaseList contain the Valuation Date of this Extracted 
+    	- the Trade Dates of DatabaseList contain the Trade Date of this Extracted 
 	then 
-		add "Matched" to decision;
+		add "Full Match" to decision;
 	else
-		add "Mismatch" to decision;
+		add "Mis Match" to decision;
 ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
