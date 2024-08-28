@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="GST Calculator">
+  <name>GST_Calculator</name>
+  <uuid>baec8297-2c78-4013-94aa-7927afaa1653</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#7d473c9f-9158-4d00-993c-7049a49aeac3"/>
+  <targetRuleProject href="../../GST%20Calculator#636646e5-a81a-46e5-8291-195b20525790"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["GST_Calculator"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

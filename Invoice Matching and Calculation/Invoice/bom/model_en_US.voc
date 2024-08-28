@@ -1,0 +1,23 @@
+
+# cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice#concept.label = Invoice
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.HSNNoes#phrase.action = set the HSN Noes of {this} to {HSN No}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.HSNNoes#phrase.navigation = {HSN No} of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.Invoice(java.util.List,java.util.List,java.util.List,int)#phrase.navigation = a new {Invoice} where {0, HSN No} {1, Amount} {2, Service Description} {3, Total}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.addTo_HSNNoes(int)#phrase.action = add {0} to the HSN Noes of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.addTo_amounts(int)#phrase.action = add {0} to the Amounts of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.addTo_serviceDescriptions(java.lang.String)#phrase.action = add {0} to the Service Descriptions of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.amounts#phrase.action = set the Amounts of {this} to {Amount}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.amounts#phrase.navigation = {Amount} of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.clear_HSNNoes()#phrase.action = clear the HSN Noes of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.clear_amounts()#phrase.action = clear the Amounts of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.clear_serviceDescriptions()#phrase.action = clear the Service Descriptions of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.removeFrom_HSNNoes(int)#phrase.action = remove {0} from the HSN Noes of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.removeFrom_amounts(int)#phrase.action = remove {0} from the Amounts of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.removeFrom_serviceDescriptions(java.lang.String)#phrase.action = remove {0} from the Service Descriptions of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.serviceDescriptions#phrase.action = set the Service Descriptions of {this} to {Service Description}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.serviceDescriptions#phrase.navigation = {Service Description} of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.total#phrase.action = set the Total of {this} to {Total}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.total#phrase.addition_setter = add {Total} to the Total of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.total#phrase.navigation = {Total} of {this}
+cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice.Invoice.total#phrase.subtraction_setter = subtract {Total} from the Total of {this}

@@ -1,0 +1,73 @@
+
+package cp4admin.invoice_decisions.invoice_matching_and_calculation.invoice;
+
+
+class Invoice
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Invoice"
+        #de.generated
+{
+    java.util.List HSNNoes domain 0,* class int
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "HSNNoes"
+                #update;
+    java.util.List amounts domain 0,* class int
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Amounts"
+                #update;
+    java.util.List serviceDescriptions domain 0,* class string
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "ServiceDescriptions"
+                #update;
+    int total
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Total"
+                #update;
+    Invoice(java.util.List HSNNoes domain 0,* class int, 
+        java.util.List amounts domain 0,* class int, 
+        java.util.List serviceDescriptions domain 0,* class string, 
+        int total)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Invoice()
+                #dataio.default;
+    void addTo_HSNNoes(int HSNNoes)
+                property collectionAttribute "HSNNoes"
+                #update;
+    void addTo_amounts(int amounts)
+                property collectionAttribute "amounts"
+                #update;
+    void addTo_serviceDescriptions(string serviceDescriptions)
+                property collectionAttribute "serviceDescriptions"
+                #update;
+    void clear_HSNNoes()
+                property collectionAttribute "HSNNoes"
+                #update;
+    void clear_amounts()
+                property collectionAttribute "amounts"
+                #update;
+    void clear_serviceDescriptions()
+                property collectionAttribute "serviceDescriptions"
+                #update;
+    void removeFrom_HSNNoes(int HSNNoes)
+                property collectionAttribute "HSNNoes"
+                #update;
+    void removeFrom_amounts(int amounts)
+                property collectionAttribute "amounts"
+                #update;
+    void removeFrom_serviceDescriptions(string serviceDescriptions)
+                property collectionAttribute "serviceDescriptions"
+                #update;
+    void set_HSNNoes(java.util.Collection HSNNoes domain 0,* class int)
+                property collectionAttribute "HSNNoes"
+                #update;
+    void set_amounts(java.util.Collection amounts domain 0,* class int)
+                property collectionAttribute "amounts"
+                #update;
+    void set_serviceDescriptions(java.util.Collection serviceDescriptions domain 0,* class string)
+                property collectionAttribute "serviceDescriptions"
+                #update;
+}
+

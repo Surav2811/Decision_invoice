@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>7d473c9f-9158-4d00-993c-7049a49aeac3</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_2" name="SGST Calculator">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Integer" collection="false" name="Total"/>
+                <output bomType="java.lang.Integer" collection="false" name="SGST Calculator"/>
+                <rule defaultRule="false" href="node_2/SGST%20Calculator.dmt" kind="DecisionTable" name="SGST Calculator"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="SGST Calculator" typeRef="java.lang.Integer"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_3" name="CGST Calculator">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Integer" collection="false" name="Total"/>
+                <output bomType="java.lang.Integer" collection="false" name="CGST Calculator"/>
+                <rule defaultRule="false" href="node_3/CGST%20Calculator.dmt" kind="DecisionTable" name="CGST Calculator"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="CGST Calculator" typeRef="java.lang.Integer"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_4" name="Total">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Integer" collection="false" name="Total"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="Total" typeRef="java.lang.Integer"/>
+    </inputData>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
